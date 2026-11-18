@@ -1,0 +1,66 @@
+body { font-family: 'Inter', Arial, sans-serif; color: #13233F; }
+section { padding: 128px 128px 160px; background: #F6F4EE; color: #13233F; font-family: 'Inter', Arial, sans-serif; counter-increment: page; }
+section.dark { background: #13233F; color: #F6F4EE; }
+section.amber { background: #E8B04A; color: #13233F; }
+
+.eyebrow { font-size: 26px; font-weight: 600; color: #1F6E6A; letter-spacing: 1px; }
+section.dark .eyebrow { color: #E8B04A; }
+section.amber .eyebrow { color: #13233F; }
+
+.big { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 120px; font-weight: 700; line-height: 1.05; color: #F6F4EE; }
+section.amber .big { color: #13233F; }
+.title { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 64px; font-weight: 700; line-height: 1.1; color: #13233F; margin-top: 12px; margin-bottom: 40px; }
+section.dark .title { color: #F6F4EE; }
+.lead { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 44px; font-weight: 600; line-height: 1.25; color: #13233F; }
+.sub { font-size: 32px; line-height: 1.35; color: #46546B; }
+section.dark .sub { color: #B9C6DB; }
+section.amber .sub { color: #13233F; }
+.note { font-size: 26px; line-height: 1.4; color: #46546B; }
+
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+.stack { display: flex; flex-direction: column; gap: 24px; }
+
+.card { background: #FFFDF8; border: 2px solid #D6D0C0; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+.card.dk { background: #13233F; border: 2px solid #13233F; }
+section.dark .card { background: #1D3359; border: 2px solid #2F4B7C; }
+.ct { font-size: 26px; font-weight: 600; color: #1F6E6A; }
+.ch { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.2; color: #13233F; }
+.cp { font-size: 26px; line-height: 1.4; color: #46546B; }
+.card.dk .ct, section.dark .card .ct { color: #E8B04A; }
+.card.dk .ch, section.dark .card .ch { color: #F6F4EE; }
+.card.dk .cp, section.dark .card .cp { color: #D4DDEC; }
+
+.stat { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 64px; font-weight: 700; line-height: 1.1; color: #13233F; }
+.stat.xl { font-size: 120px; line-height: 1.05; }
+.pill { font-size: 26px; font-weight: 600; padding: 6px 20px; border-radius: 200px; align-self: flex-start; }
+.p-warn { background: #E8B04A; color: #13233F; }
+.p-crit { background: #13233F; color: #F6F4EE; }
+.p-none { background: #ECE7DA; color: #13233F; }
+
+.tbl { font-family: 'Inter', Arial, sans-serif; font-size: 28px; color: #13233F; }
+
+.foot { position: absolute; left: 128px; bottom: 64px; width: 1400px; font-size: 24px; color: #5A6678; }
+.pg { position: absolute; right: 128px; bottom: 64px; width: 200px; text-align: right; font-size: 24px; color: #5A6678; }
+.pg::before { content: counter(page); }
+section.dark .foot, section.dark .pg { color: #AEBBD0; }
+section.amber .foot, section.amber .pg { color: #13233F; }
+
+.row { display: flex; gap: 24px; align-items: center; }
+.rl { width: 300px; font-size: 26px; font-weight: 600; line-height: 1.25; color: #13233F; }
+.track { display: flex; align-items: center; gap: 16px; }
+.bar { display: flex; align-items: center; }
+.seg { height: 64px; display: flex; align-items: center; padding: 0 12px; box-sizing: border-box; }
+.segt { font-size: 24px; font-weight: 600; color: #13233F; white-space: nowrap; }
+.s-res { background: #13233F; }
+.s-res .segt, .s-v .segt { color: #F6F4EE; }
+.s-h { background: #E8B04A; }
+.s-v { background: #1F6E6A; }
+.s-sobra { border: 3px dashed #46546B; }
+.tl { font-size: 24px; font-weight: 600; color: #13233F; white-space: nowrap; }
+
+.trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; }
+.col { display: flex; flex-direction: column; gap: 10px; border-top: 4px solid #13233F; padding-top: 20px; }
+.colh { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.2; color: #13233F; }
+.colp { font-size: 26px; line-height: 1.4; color: #13233F; }
+.cover-box { height: 824px; display: flex; flex-direction: column; justify-content: space-between; }
