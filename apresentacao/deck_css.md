@@ -1,3 +1,6 @@
+<!-- Convertido de: apresentacao/deck.css -->
+
+```css
 body { font-family: 'Inter', Arial, sans-serif; color: #13233F; }
 section { padding: 128px 128px 160px; background: #F6F4EE; color: #13233F; font-family: 'Inter', Arial, sans-serif; counter-increment: page; }
 section.dark { background: #13233F; color: #F6F4EE; }
@@ -64,3 +67,4 @@ section.amber .foot, section.amber .pg { color: #13233F; }
 .colh { font-family: 'Space Grotesk', Arial, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.2; color: #13233F; }
 .colp { font-size: 26px; line-height: 1.4; color: #13233F; }
 .cover-box { height: 824px; display: flex; flex-direction: column; justify-content: space-between; }
+```
